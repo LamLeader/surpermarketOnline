@@ -1,0 +1,156 @@
+.content{
+	margin-top: 16px;
+	}
+.left_bar{
+	padding: 0px 40px 0px 46px;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	text-align: center;
+	background: #dcdcdc;
+	}
+.top{
+	margin-top: 16px;
+	}
+.top p{
+	color: #040000;
+	margin: 16px;
+	}
+.down{
+	clear: both;
+	overflow: hidden;
+	}
+.down ul{
+	padding: 0px;
+	}
+.down li{
+	margin-bottom: 6px;
+	border: 2px solid #FC6E1C;
+	}
+.down li a{
+	display: block;
+	padding: 16px 40px;
+	color: #040000;
+	}
+.down a:hover{
+	background: #FC6E1C;
+	color: #fff;
+	}
+.down .active{
+	background: #FC6E1C;
+	color: #fff;
+	}
+.right{
+	padding: 0px;
+	}
+.right .head h3{
+	font-family: "微软雅黑";
+	margin: 0px;
+	background: #DCDCDC;
+	padding: 12px 0px 12px 34px;
+	}
+.right a{
+	color: #000000;
+	}
+.right a:hover{
+	color: #FC6E1C;
+	}
+.right .list{
+	clear: both;
+	overflow: hidden;
+	padding-left: 60px;
+	margin-bottom: 62px;
+	}
+.right .first{
+	margin-top: 15px;
+	}
+.right .list img{
+	float: left;
+	padding-right: 12px;
+	}
+.right .list p{
+	margin-top: 6px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-family: "宋体";color: #040000;
+	}
+.right .list p:last-child{
+	float: right;
+	}
+.page{
+	float: right;	
+	}
+.page a:hover{
+	color: #ed6c25;
+}
+
+
+
+.end{
+	clear: both;
+	overflow: hidden;
+	}
+.end h3{
+	margin-top: 35px;
+	font-size: 24px;
+	font-family: "微软雅黑";
+	color: #040000;
+	}
+.end ul{
+	padding-left: 0px;
+}
+.end img{
+	width: 100%;
+	border: 1px solid #e5e5e4;
+	}
+.end .word{
+	clear: both;
+	overflow: hidden;
+	background: #E5E5E4;
+	}
+.end .word p:last-child{
+	float: right;
+	}
+.end .like{
+	margin: 30px 0px;
+	font-family: "宋体";
+	font-size: 14px;
+	padding: 0px 3%;
+	color: #5e5e5f;
+	}
+.end p,span{
+	margin-left: 12px;
+	}
+.end .like .word a{
+	color: #000000;
+}
+.like .word span:nth-child(1){
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #dc5b15;
+	}
+.like .word span:nth-child(2){
+	text-decoration: line-through;
+	}
+
+
+@media only screen and (max-width:1200px ) {
+	.shop dl input{width: 40px;}
+}
+@media only screen and (max-width:991px ) {
+	.right .head{display: none;}
+	.head_nav{display: none;}
+	.shop{margin-top: 0px;}
+	.down{text-align: center;}
+	.down ul{display: inline-block;}
+	.down li{float: left;margin: 5px 2px;}
+	.down li a{padding: 0px 5px;}
+	.right .list{padding: 0px 10px;margin-bottom: 20px;}
+}
+@media only screen and (max-width:769px ) {
+	.shop dl input{width: 40px;}
+	.page{padding-right: 10px;}
+	.end .like{margin-bottom: 10px;}
+}
+@media only screen and (max-width:320px ) {
+	.end .like{padding: 0px 5px;}
+}

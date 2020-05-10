@@ -1,0 +1,114 @@
+.login li:first-child a{
+	color: #fc6e1c;
+	}
+.content{
+	position: relative;
+	margin-bottom: 0px;
+	background: url(../images/register_img/bg.jpg) center top;
+	padding-bottom: 100px;
+	}
+.jumbotron{
+	padding-top: 104px;
+	}
+.imfor{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	float: left;
+	border-radius: 5px;
+	text-align: center;
+	background: #FFFFFF;
+	padding: 0 40px;
+	}
+.imfor h3{
+	font-family: "微软雅黑";
+	font-size: 24px;
+	margin-top: 46px;
+	}
+.imfor .input-group-btn img {
+	width: 24px;
+	margin: auto 18px;
+	}
+.imfor .input-group{
+	margin-top: 24px;
+	float: left;
+	border-radius: 5px;
+	border: 2px solid #717171;
+	width: 100%;
+	}
+.imfor .input-group-btn{
+	width: 24px;
+	}
+.imfor .input-group input{
+	float: left;
+	height: 50px;
+	border: none;
+	border-left: 1px solid #717171;
+	padding: 5px;
+	}
+.imfor .form-control{
+	padding: 0px;
+	}
+.imfor .btn{
+	float: left;
+	width: 96%;
+	padding: 16px 10px;
+	margin: 20px auto;
+	margin-left: 2%;
+	border-radius: 5px;	
+	font-family: "微软雅黑";
+	font-size: 24px;
+	background: #fc6e1c;
+	color: #FFFFFF;
+	}
+.imfor .pass{
+	float: right;
+	font-family: "宋体";
+	font-size: 14px;
+	display: block;
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #040000;
+	}
+.imfor .c-checkbox{
+	float: left;
+	padding-left: 10px;
+	font-size: 14px;
+	font-weight:normal;
+	margin-bottom: 24px;
+	cursor: pointer;
+	}
+.imfor .pass .new_user{
+	font-weight: normal;
+	color: #fc6e1c;
+	}
+.c-checkbox input{
+	position: absolute;
+	visibility: hidden;
+	}
+.c-checkbox span{
+	position: absolute;
+	display: block;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #fc6e1c;
+	margin-top: 4px;
+	left: 30px;
+	}
+.c-checkbox input:checked + span:after{
+	position: absolute;
+	display: block;
+	width: 12px;
+	height: 15px;
+	top: -8px;
+	border: solid #fc6e1c;
+	border-width: 0 2px 2px 0;
+	transform: rotate(40deg);
+	content: "";
+	}
+
+
+
+
+@media only screen and (max-width:1200px ) {
+	.imfor{font-size: 14px;}	
+}

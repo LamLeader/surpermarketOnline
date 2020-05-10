@@ -1,0 +1,20 @@
+<%@ page language="java" pageEncoding="UTF-8"%><!DOCTYPE html>
+<html><%@include file="inc/inc_css.jsp" %><script type="text/javascript" src="${ctx}/resource/front/js/shop_cart.js" ></script><link rel="stylesheet" href="${ctx}/resource/front/css/shop_cart.css" />
+	<body>		<%@include file="inc/inc_head.jsp" %>
+		<div class="content">			<div class="container">			<c:if test="${list==null||list.size()==0 }">				<p>暂无商品</p>			</c:if>			<c:if test="${list!=null&&list.size()>0 }">				<div class="row main">
+					<div class="col-md-12 top">
+						<div class="col-md-6 shop_left">
+							<p class="col-md-6">商品信息</p>
+						</div>						<div class="col-md-6 shop_right shop_hidden">							<dl>
+								<dd>单价（元）</dd>								<dd>数量</dd>								<%--<dd>金额（元）</dd>--%>								<dd>操作</dd>							</dl>
+						</div>
+					</div>					<ul class="col-md-12 goods">					<c:forEach items="${list }" var="lists">						<li class="list">
+							<div class="col-md-6 main_left">
+								<div class="product">
+									<a href="pro_center.html"><img src="${ctx}/${lists.productPic1}" /></a>									<p><a href="pro_center.html">${lists.productName }</a></p>
+								</div>
+							</div>							<div class="col-md-6">								<div class="shop_right shop">									<dl>										<dd class="money">											<p>${lists.oldPrice }</p>											<p>${lists.price }</p>										</dd>										<dd class="num">											<button type="button" class="btn-left" onclick="">-</button>											<input type="text" value="${lists.num }" name="num" class="prd_num" maxlength="2" />											<button type="button" class="btn-right" onclick="">+</button>											<a href="#" onclick="updateShowCar('${lists.ids}',this);" class="btn btn-2 ">更新</a>										</dd>										<%--										<dd class="money2">											24.00										</dd> --%>										<dd class="del">											<a href="###" onclick="deleteOne('${lists.ids}');">删除</a>										</dd>									</dl>								</div>
+							</div>						</li>						</c:forEach>					</ul>					<div class="col-md-12 acount">						<%--						<ul class="col-md-6 col-sm-12 col-xs-12 acount_left">							<li class="col-md-3 col-sm-4">								<label class="c-checkbox all down_all">									<input type="checkbox" />									<span></span>全选								</label>							</li>							<li class="col-md-3 col-sm-4 "><a href="###" class="select">删除</a></li>							<li class="col-md-6 col-sm-4 "><a href="###">清除失效产品</a></li>						</ul> --%>						<ul class="col-md-6 col-sm-12 col-xs-12 acount_right">							<%--<li>已选商品 <span class="check-num"> 0 </span> 件</li> --%>							<li>合计（不含运费）：</li>							<li>¥<span class="all_money">${total }</span></li>							<li><a href="##" onclick="qrzf('${total+20 }');">确定支付</a></li>						</ul>					</div>
+				</div>				</c:if>
+			</div>		</div>		<%@include file="inc/inc_foot.jsp" %>
+	</body>	<script type="text/javascript">	function deleteOne(id) {		if (!confirm("确定要删除吗?")) {			return false;		}		var params = {			id : id		};		$.post("deleteOneShopCar.html", params, function(result) {			result = eval("(" + result + ")");			if (result.status == "true" || result.status == true) {				alert('成功');				window.location.reload();			}		});	}		function updateShowCar(id,src) {		var num = $(src).prev().prev().val();		var params = {id : id,num:num};		$.post("updateShopCar.html", params, function(result) {			result = eval("(" + result + ")");			if (result.status == "true" || result.status == true) {				alert('成功');				window.location.reload();			}		});	}		function qrzf(total) {		var params = {total:total};		$.post("pay.html", params, function(result) {			result = eval("(" + result + ")");			if (result.status == "true" || result.status == true) {				alert('支付成功');				window.location.href="${ctx}/front/myOrder.html";			}		});	}</script></html>

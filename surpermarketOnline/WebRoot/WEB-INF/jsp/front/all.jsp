@@ -1,0 +1,10 @@
+<%@ page language="java" pageEncoding="UTF-8"%><!DOCTYPE html><html>	<%@include file="inc/inc_css.jsp" %><link rel="stylesheet" href="${ctx}/resource/front/css/pro_list.css" /><script type="text/javascript" src="${ctx}/resource/front/js/jquery.touchSwipe.min.js" ></script><script src="${ctx}/resource/front/js/lunbo.js"></script>
+	<body>		<%@include file="inc/inc_head.jsp" %>
+		<div class="content">			<div class="container">				<div class="row">
+					<div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 text">
+						<div class="up">
+							<span>产品中心</span>
+						</div>						<div class="down">
+							<ul>								<c:forEach items="${typesList }" var="typesLists">									<li><a href="${ctx }/front/all.html?typesId=${typesLists.id}">${typesLists.typesName }</a></li>								</c:forEach>															</ul>
+						</div>
+					</div>					<div class="col-lg-10 col-md-9 col-sm-9 main_pro">						<%--						<div class="title">							<h3>乐吧薯片</h3>						</div> --%>						<ul>						<c:forEach items="${list }" var="lists">						<li class="pro_list col-md-4 col-sm-4 col-xs-6">							<div class="list">								<a href="${ctx }/front/detail.html?id=${lists.id}">									<img class="img-responsive" src="${ctx}/${lists.productPic1}" />								</a>								<div class="word">									<p>卖家：${lists.name }</p>									<p>&yen;原价：${lists.price }，特价：<span>${lists.oldPrice }</span></p>									<p><a href="${ctx }/front/detail.html?id=${lists.id}">${lists.productName}</a></p>									<%--									<p>★</p> --%>								</div>							</div>						</li>						</c:forEach>						</ul>						<%--						<nav class="page">						  <ul class="pagination">						    <li><a href="###">&lsaquo;</a></li>						    <li><a href="###" class="active">1</a></li>						    <li><a href="###">2</a></li>						    <li><a href="###">3</a></li>						    <li>●●●●●●</li>						    <li><a href="###">30</a></li>						    <li><a href="###">&rsaquo;</a></li>						  </ul>						</nav> --%>					</div>				</div>			</div>		</div>		<%@include file="inc/inc_foot.jsp" %>	</body></html>

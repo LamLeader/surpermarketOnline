@@ -1,0 +1,299 @@
+.content{
+	margin-top: 16px;
+}
+.left_bar{
+	padding: 0px 40px 0px 46px;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	text-align: center;
+	background: #dcdcdc;
+	}
+.top{
+	margin-top: 16px;
+	}
+.top p{
+	font-family: "微软雅黑";
+	color: #040000;
+	font-size: 18px;
+	margin: 16px;
+	}
+.down{
+	clear: both;
+	overflow: hidden;
+	}
+.down ul{
+	padding: 0px;
+	}
+.down li{
+	margin-bottom: 6px;
+	border: 2px solid #FC6E1C;
+	}
+.down li a{
+	display: block;
+	padding: 16px 40px;
+	color: #040000;
+	}
+.down a:hover{
+	background: #FC6E1C;
+	color: #fff;
+	}
+.down .active{
+	background: #FC6E1C;
+	color: #fff;
+	}
+.right{
+	padding: 0px;
+	}
+.right .head{
+	padding: 0px;
+	background: #DCDCDC;
+	height: 48px;
+	}
+.head_nav{
+	padding-right: 0px;
+	}
+.main{
+	clear: both;
+	overflow: hidden;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	margin-top: 32px;
+	color: #0e050a;
+	}
+.shop_left{
+	margin-bottom: 10px;
+	}
+.shop_right{
+	padding-right: 0px;
+	text-align: center;
+	}
+.shop .num button{
+	background: none;
+	border: none;
+	}
+.shop_right dd{
+	float: left;
+	width: 33.3333%;
+	}
+	
+.goods{
+	clear: both;
+	overflow: hidden;
+	padding: 0px 0px 0px 15px;
+	}
+.goods .list{
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 22px;
+	border: 2px solid #898989;
+	
+	}
+.goods label{
+	float: left;
+	padding-left: 10px;
+	cursor: pointer;
+	}
+.goods img{
+	margin-right: 20px;
+	float: left;
+	}
+.main_left{
+	padding-left: 0px;
+	}
+.main_right{
+	padding-right: 0px;
+}
+.product{
+	clear: both;
+	overflow: hidden;
+	padding: 26px 0px 24px 60px;
+	}
+.product a{
+	font-family: "宋体";
+	font-size: 14px;
+	color: #0e050a;
+}
+.shop{
+	clear: both;
+	overflow: hidden;
+	margin-top: 60px;
+	font-size: 18px;
+	font-family: arial;
+	}
+.shop dl input{
+	width: 52px;
+	height: 28px;
+	text-align: center;
+	}
+.shop p{
+	margin-bottom: 0px;
+	}
+.shop .money p:first-child{
+	font-size: 16px;
+	text-decoration: line-through;
+	}
+.shop .money p:last-child{
+	color: #ed6c25;
+	}
+.shop .num,.money2,.del{
+	margin-top: 10px;
+	}
+.shop .num a{
+	padding: 5px;
+	}
+.shop .del{
+	font-family: "微软雅黑";
+	}
+.shop .money2{
+	color: #dc5b15;
+	}
+.page{
+	text-align: center;
+	}
+.page ul{
+	font-family: arial;
+	display: inline-block;
+	margin-top: 18px;
+	margin-bottom: 40px;
+	}
+.page li{
+	float: left;
+	margin: 0px 5px;
+	}
+.page li a{
+	padding: 0px 10px;
+	font-size: 18px;
+	border-radius: 6px;
+	border: 2px solid #000000;
+	color: #000000;
+	}
+.page .pagination > li:first-child > a{
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	}
+.page .pagination > li:last-child > a{
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	}
+.page li:nth-child(5) a{
+	border: none;
+	padding: 0px;
+	}
+.page li:nth-child(5) a:hover{
+	background: #FFFFFF;
+	color: #000000;
+	}
+.page li a:hover{
+	background: #fc6e1c;
+	border-color: #fc6e1c;
+	color: #FFFFFF;
+	}
+.page .on{
+	background: #fc6e1c;
+	border-color: #fc6e1c;
+	color: #FFFFFF;
+	}
+.end h3{
+	font-size: 24px;
+	font-family: "微软雅黑";
+	color: #040000;
+	}
+.end img{
+	width: 100%;
+	border: 1px solid #e5e5e4;
+	}
+.end ul{
+	clear: both;
+	overflow: hidden;
+	padding-left: 0px;
+}
+.end .word{
+	clear: both;
+	overflow: hidden;
+	background: #E5E5E4;
+	}
+.end .word p,span{
+	margin-left: 12px;
+	}
+.end .word p:last-child{
+	float: right;
+	}
+.end .like{
+	margin: 50px 0px;
+	font-family: "宋体";
+	font-size: 14px;
+	padding: 0px 3%;
+	}
+.like .word span:nth-child(1){
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #dc5b15;
+	}
+.end .like .word a{
+	color: #000000;
+	}
+.like .word span:nth-child(2){
+	text-decoration: line-through;
+	}
+.c-checkbox{
+	padding-left: 60px;
+	}
+.c-checkbox input{
+	position: absolute;
+	visibility: hidden;
+	}
+.c-checkbox span{
+	position: absolute;
+	display: block;
+	width: 18px;
+	height: 18px;
+	border: 3px solid #000;
+	left: 10px;
+	margin-top: 6px;
+	}
+.c-checkbox input:checked + span:after{
+	position: absolute;
+	display: block;	
+	width: 10px;
+	height: 20px;
+	left: 5px;
+	margin-top: -8px;
+	border: solid #fc6e1c;
+	border-width: 0 4px 4px 0;
+	transform: rotate(45deg);
+	content: "";
+	}
+.all{
+	cursor: pointer;
+	font-weight: normal;
+	}
+.all span{
+	left: 20px;
+	}
+
+
+
+@media only screen and (max-width:1200px ) {
+	.shop dl input{width: 40px;}
+}
+@media only screen and (max-width:991px ) {
+	.right .head{display: none;}
+	.shop_left p{display: none;}
+	.shop_top{display: none;}
+	.shop{margin-top: 0px;}
+	.goods{padding: 0px 6px;}
+	.down{text-align: center;}
+	.down ul{display: inline-block;}
+	.down li{float: left;margin: 5px 10px;}
+	.down li a{padding: 0px 5px;}
+	}
+@media only screen and (max-width:347px ) {
+	.product{padding: 25px 4px 10px;}
+	.like{padding: 0px 20px;}
+	.end .like{padding: 0px 5px;}
+	.page li{margin: 0 3px;}
+}

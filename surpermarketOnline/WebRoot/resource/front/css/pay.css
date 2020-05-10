@@ -1,0 +1,188 @@
+.locative{
+	margin-top: 32px;
+	}
+.bank{
+	font-size: 14px;
+	font-family: "宋体";
+	color: #000000;
+	}
+.bank img{
+	padding-left: 50px;
+	}
+.bank .left{
+	clear: both;
+	overflow: hidden;
+	margin-left: 56px;
+	margin-top: 26px;
+	}
+.bank .left input{
+	visibility: hidden;
+	}
+.bank .left .first{
+	background: url(../images/pay_img/yuan.png) no-repeat left;
+	margin-left: 20px;
+	}
+.bank .left .second{
+	background: url(../images/pay_img/yuan1.png) no-repeat 3px 4px;
+	}
+.iradio_polaris{
+	float: left;
+	}
+.bank label{
+	width: 100%;
+	margin-bottom: 0px;
+	cursor: pointer;
+	box-sizing: border-box;
+	border: 2px solid transparent;
+	}
+.bank label .iradio_polaris{
+	margin: 16px;
+	}
+.bank .pay_bank{
+	clear: both;
+	overflow: hidden;
+	font-family: "宋体";
+	font-size: 14px;
+	font-weight: normal;
+	}
+.bank .pay_right{
+	float: right;
+	margin-right: 55px;
+	margin-top: 9px;
+	visibility: hidden;
+	}
+.bank .pay_right span:nth-child(2){
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #dc5b15;
+	}
+.bank .pay_left{
+	visibility: hidden;
+	}
+.bank .active .pay_left{
+	visibility: visible;
+	}
+.bank .left .active .pay_right{
+	visibility: visible;
+	}
+.bank .left	.active{
+	border: 2px solid #dc5b15;
+	}
+	
+.pay{
+	margin-left: 76px;
+	}
+.pay_method{
+	clear: both;
+	overflow: hidden;
+	margin: 24px 0px 54px 0px;
+	}
+.pay_method a{
+	text-align: center;
+	width: 134px;
+	height: 48px;
+	line-height: 48px;
+	float: left;
+	display: block;
+	margin: 0px 12px;
+	}
+.pay_method a:first-child{
+	border: 1px solid #949494;
+	margin-left: 0px;
+	}
+.pay_method a:last-child{
+	border: 1px dashed #949494;
+	}
+.safe{
+	margin-bottom: 40px;
+	}
+.safe img{
+	float: left;
+	}
+.password,.list_mima{
+	clear: both;
+	overflow: hidden;
+	font-size: 14px;
+	font-family: "宋体";
+	}
+.password p{
+	margin: 30px 0px 20px 0px;
+	}
+.password .list_mima{
+	width: 235px;
+	height: 51px;
+	border: 1px solid #949494;
+	}
+.password>dl>dd:after{
+	content:'';
+	width:1px;
+	height:34px;
+	background:#ccc;
+	display: block;
+	float: left;
+	margin-top:7px;
+	}
+.password>dl>dd:first-child:after{
+	content: '';
+	display: block;
+	width: 0;
+	}
+.password .list_mima dd{
+	float: left;
+	}
+.password .list_mima input{
+	width: 38px;
+	height: 53px;
+	text-align: center;
+	border-color: transparent;
+	}
+.password p:last-child{
+	color: #949494;
+	margin: 20px 0px 20px 10px;
+	}
+.pay a:nth-child(4){
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	width: 142px;
+	height: 53px;
+	text-align: center;
+	line-height: 53px;
+	border-radius: 5px;
+	background: #dc5b15;
+	color: #fff;
+	margin-bottom: 50px;
+	}
+.bill{
+	clear: both;
+	overflow: hidden;
+	margin-left: 76px;
+	color: #30e050a;
+	margin-bottom: 62px;
+	}
+.bill h4{
+	font-family: "微软雅黑";
+	}
+.bill p{
+	float: none;
+	margin-left: 50px;
+	}
+.bill a{
+	text-decoration: underline;
+	color: #dc5b15;
+	}
+
+
+@media only screen and (max-width:767px ) {
+	.pay{margin-left: 22px;}
+	.bill{margin-left: 34px;}
+	.pay_method a:last-child{margin: 0px;}
+	.bank .left{margin-left: 10px;margin-right: 10px;}
+	.bank img{padding-left: 0px;}
+	.locative p{margin-left: 10px;}
+}
+@media only screen and (max-width: 568px ) {
+	.bank .pay_bank{float: right;}
+	.bank .pay_right span:nth-child(2){font-size: 14px;}
+	.bank .pay_right{margin-top: 0px;padding-left: 10px;}
+}

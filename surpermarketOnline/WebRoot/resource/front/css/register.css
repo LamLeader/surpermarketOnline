@@ -1,0 +1,171 @@
+.login li:last-child a{
+	color: #fc6e1c;
+	}
+.content{
+	position: relative;
+	margin-bottom: 0px;
+	/* background: url(../images/register_img/bg.jpg) center top; */
+	padding-bottom: 18px;
+	}
+.jumbotron{
+	padding-top: 18px;
+	}
+.imfor{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	float: left;
+	border-radius: 5px;
+	text-align: center;
+	background: #FFFFFF;
+	padding: 0 40px;
+	}
+.imfor h3{
+	font-family: "微软雅黑";
+	font-size: 24px;
+	margin-top: 12px;
+	}
+.imfor .input-group{
+	margin-top: 13px;
+	float: left;
+	border-radius: 5px;
+	border: 2px solid #717171;
+	}
+.imfor input:focus{
+	border-color: inherit;
+	}
+.imfor .input-group-btn img {
+	width: 24px;
+	margin: auto 18px;
+	}
+.imfor .input-group input{
+	float: left;
+	border: none;
+	border-left: 1px solid #717171;
+	height: 50px;
+	font-size: 18px;
+	padding: 5px;
+	box-shadow: none;
+	outline: none;
+	}
+.imfor .short{
+	width: 60%;
+	float: left;
+	}
+.imfor .word{
+	display: block;
+	width: 36%;
+	float: right;
+	border-radius: 5px;
+	padding: 14px 8px;
+	margin-top: 13px;
+	color: #FFFFFF;
+	background-color: #8a8a8a;
+	}
+.imfor .map{
+	margin-top: 13px;
+	float: left;
+	}
+.imfor .address{
+	margin-top: 0px;
+	width: 46%;
+	}
+.imfor .form-control{
+	padding: 0px;
+	}
+.imfor .map select{
+	height: 42px;
+	font-size: 18px;
+	color: #717171;
+	padding: 5px;
+	border: none;
+	border-left: 1px solid #717171;
+	box-shadow: inherit;
+	appearance: none;
+	-moz-appearance:none;
+    -webkit-appearance:none;
+    background: url(../images/register_img/d_down.png) no-repeat right transparent scroll;
+	}
+.imfor select:focus{
+	border-color: inherit;
+	}
+.imfor .city{
+	float: left;
+	width: 23%;
+	border: 2px solid #717171;
+	border-radius: 5px;
+	margin-left: 10px;
+	}
+.imfor .map .form-group{
+	margin-bottom: 0px;
+	}
+.imfor .btn{
+	margin: 20px auto;
+	border-radius: 5px;
+	width: 94%;
+	margin-left: 3%;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	float: left;
+	padding: 12px 34%;
+	background: #fc6e1c;
+	color: #FFFFFF;
+	}
+.imfor .check{
+	float: left;
+	font-family: "宋体";
+	font-size: 14px;
+	color: #666666;
+	}
+.imfor .check label{
+	margin-bottom: 16px;
+	cursor: pointer;
+	}
+.imfor .check input{
+	width: 14px;
+	height: 14px;
+	}
+.imfor .check a{
+	color: #fc6e1c;
+	}
+.c-checkbox{
+	padding-left: 20px;
+	}
+.c-checkbox input{
+	position: absolute;
+	visibility: hidden;
+	}
+.c-checkbox span{
+	position: absolute;
+	display: block;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #fc6e1c;
+	margin-top: 4px;
+	left: 40px;
+	}
+.c-checkbox input:checked + span:after{
+	position: absolute;
+	display: block;
+	width: 12px;
+	height: 15px;
+	top: -8px;
+	border: solid #fc6e1c;
+	border-width: 0 2px 2px 0;
+	transform: rotate(40deg);
+	content: "";
+	}
+
+
+
+
+
+@media only screen and (max-width:1200px ) {
+	.imfor{font-size: 14px;}
+	.imfor .check{font-size: 12px;}
+	}
+@media only screen and (max-width:991px ) {
+	.imfor .check{font-size: 14px;}
+	}
+@media only screen and (max-width:320px ) {
+	.imfor .city{width: 22%;}
+}

@@ -1,0 +1,234 @@
+.content{
+	margin-top: 16px;
+	}
+.left_bar{
+	padding: 0px 40px 0px 46px;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	text-align: center;
+	background: #dcdcdc;
+	}
+.top{
+	margin-top: 16px;
+	}
+.top p{
+	color: #040000;
+	margin: 16px;
+	}
+.down{
+	clear: both;
+	overflow: hidden;
+	}
+.down ul{
+	padding: 0px;
+	}
+.down li{
+	margin-bottom: 6px;
+	border: 2px solid #FC6E1C;
+	}
+.down li a{
+	color: #040000;
+	display: block;
+	padding: 16px 40px;
+	}
+.down a:hover{
+	background: #FC6E1C;
+	color: #fff;
+	}
+.down .active{
+	background: #FC6E1C;
+	color: #fff;
+	}
+.right{
+	padding: 0px;
+	}
+.right .head p{
+	clear: both;
+	overflow: hidden;
+	font-family: "微软雅黑";
+	margin: 0px;
+	background: #DCDCDC;
+	padding: 12px 0px 12px 34px;
+	}
+.right .head a{
+	float: right;
+	}
+.right .head a:nth-child(2){
+	color: #000000;
+}
+.word:hover{
+	color: #ed6c25;
+	text-decoration: none;
+	}
+.word{
+	color: #ed6c25;
+	}
+.right .list{
+	clear: both;
+	overflow: hidden;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	border: 2px solid #898989;
+	margin: 70px 0px 36px 52px;
+	}
+.right .list_left{
+	padding: 14px 0px 14px 14px;
+	}
+.right .list_left p{
+	margin-top: 20px;
+	font-size: 16px;
+	}
+.right .list img{
+	float: left;
+	margin-right: 14px;
+	}
+.right .list .list_right{
+	text-align: center;
+	}
+.right .list dl{
+	margin-top: 58px;
+	padding-right: 0px;
+	}
+.right .list dd{
+	width: 33.33%;
+	float: left;
+	}
+.right .list .list_right .num input{
+	width: 52px;
+	height: 28px;
+	text-align: center;
+	border: 1px solid #040000;
+	}
+.right .list .list_right .total span:last-child{
+	color: #ed6c25;
+	}
+.right .logistics{
+	clear: both;
+	overflow: hidden;
+	}
+.right .logistics ul{
+	clear: both;
+	overflow: hidden;
+	margin-top: -52px;
+	padding-left: 0px;
+	}
+.right .logistics li{
+	float: left;
+	text-align: center;
+	width: 25%;
+	}
+.right .logistics .last{
+	padding-right: 0px;
+	}
+.right .logistics p{
+	font-size: 16px;
+	color: #7a7a7a;
+	margin-bottom: 0px;
+	}
+.right .logistics p:nth-child(1){
+	color: #000000;
+	}
+.right .logistics p:nth-child(2){
+	width: 28px;
+	height: 28px;
+	line-height: 30px;
+	color: #fff;
+	border-radius: 50%;
+	background: #ed6c25;
+	margin: 10px auto;
+	}
+.right .logistics span{
+	display: block;
+	width: 75%;
+	height: 10px;
+	background: #ed6c25;
+	margin: 50px 12% 0px;
+	}
+.tips{
+	clear: both;
+	overflow: hidden;
+	color: #000000;
+	}
+.right .time{
+	float: right;
+	padding-right: 0px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	}
+.right .time ul{
+	padding-left: 0px;
+	}
+.right .msg{
+	padding-left: 60px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	}
+.right .time li:first-child span{
+	color: #dc5b15;
+	}
+.right .time li{
+	text-align: right;
+	}
+.right li{
+	margin-bottom: 28px;
+	}
+.right .msg ul{
+	padding-left: 0px;
+	}
+.right .msg li:first-child{
+	color: #dc5b15;
+	}
+.right h3{
+	font-size: 16px;
+	margin-bottom: 32px;
+	}
+.right .total li{
+	width: 50%;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	float: left;
+	}
+
+.right .total .pay li:first-child{
+	width: 75%;
+	}
+.right .total .pay li:last-child{
+	width: 25%;
+	border-radius: 5px;
+	text-align: center;
+	background: #DC5B15;
+	color: #fff;
+	}
+.right .total .pay li span:last-child{
+	color: #dc5b15;
+}
+	
+	
+
+@media only screen and (max-width:1200px ) {
+	.shop dl input{width: 40px;}	
+}
+@media only screen and (max-width:991px ) {
+	.head_nav{display: none;}
+	.shop{margin-top: 0px;}
+	.down{text-align: center;}
+	.down ul{display: inline-block;}
+	.down li{float: left;margin: 5px 2px;}
+	.down li a{padding: 0px 5px;}
+	.right .list{padding: 0px 10px;margin: 10px 0px 0px;}
+	.right .logistics{padding: 0 2%;}
+	}
+@media only screen and (max-width: 767px ) {
+	.right .time{float: none;}
+	.right .time li{text-align: left;font-size: 12px;}
+	.right .msg{padding-left: 0px;font-size: 12px;}
+	.right .total li{font-size: 16px;}
+	.right .list_left p{margin-top: 10px;}
+}
+@media only screen and (max-width:320px ) {
+	.right .logistics{padding: 0px;}
+	.right .logistics p{font-size: 14px;}
+	.right .list dl{margin-top: 0px;margin-bottom: 10px;}
+	.right .list dd:nth-child(1){width: 20%;}
+	.right .list dd:nth-last-child(1){width: 40%;}
+	}

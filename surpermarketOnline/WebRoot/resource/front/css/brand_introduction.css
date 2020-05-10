@@ -1,0 +1,41 @@
+.content{
+	color: #000000;
+	}
+.title{
+	font-family: "微软雅黑";
+	font-size: 24px;
+	}
+.title h3{
+	width: 96px;
+	margin-top: 32px;
+	margin-bottom: 42px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #000000;
+	}
+.brand img{
+	max-width: 100%;
+	height: auto;
+	}
+.brand .left{
+	padding-left: 0px;
+}
+.brand p{
+	font-family: "宋体";
+	font-size: 14px;
+	text-indent: 2em;
+	margin-bottom: 4px;
+	}
+.right{
+	margin-bottom: 38px;
+	}
+
+
+
+@media only screen and (max-width:991px ) {
+	.brand img{width: 100%;}
+	.brand .left{padding-left: 15px;}
+	.brand .right{padding: 0px 10px;}
+}
+@media only screen and (max-width: 767px ) {
+	.title h3{margin: 10px;}
+}

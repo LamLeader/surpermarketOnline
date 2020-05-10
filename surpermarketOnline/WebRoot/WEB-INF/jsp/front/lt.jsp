@@ -1,0 +1,4 @@
+<%@ page language="java" pageEncoding="UTF-8"%><!DOCTYPE html><html><%@include file="inc/inc_css.jsp" %><link rel="stylesheet" href="${ctx}/resource/front/css/news.css" />	<body>		<%@include file="inc/inc_head.jsp" %>
+		<div class="content">			<div class="container">				<div class="row">
+					<div class="col-lg-10 col-md-9 col-sm-9 news_list">
+						<h3>帖子列表</h3>						<ul>							<c:forEach items="${list }" var="listss">							<li>								<div class="list col-md-9 col-sm-12">									<p class="col-md-10 col-sm-9 col-xs-9">${listss.customerName }:${listss.title },日期：${listss.insertDate },[赞：${listss.zan }]</p>									<a href="wdxxShow.html?id=${listss.id }" class="pull-right more">详情>></a>								</div>							</li>							</c:forEach>						</ul>					</div>				</div>			</div>		</div>		<%@include file="inc/inc_foot.jsp" %>	</body></html>

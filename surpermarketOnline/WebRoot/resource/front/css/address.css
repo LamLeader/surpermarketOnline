@@ -1,0 +1,178 @@
+.car a,img{
+	color: #FC6E1C;
+	}
+.locative{
+	font-size: 14px;
+	font-family: "宋体";
+	margin-top: 32px;
+	color: #000000;
+	}
+.address{
+	clear: both;
+	overflow: hidden;
+	font-family: "微软雅黑";
+	}
+.address label{
+	cursor: pointer;
+	}
+.address ul{
+	padding-left: 0px;
+	}
+.address .main {
+	clear: both;
+	overflow: hidden;
+	}
+.address .main .text{
+	font-size: 18px;
+	color: #040000;
+	}
+.c-radio input{
+	width: 22px;
+	visibility: hidden;
+	}
+.c-radio .first{
+	font-size: 20px;
+	background: url(../images/address_img/yuan.png) no-repeat center;
+	}
+.c-radio .first .second{
+	background: url(../images/address_img/yuan1.png) no-repeat center;
+	}
+.address .active{
+	border: 2px solid #dc5b15;
+	}
+.address .left label{
+	clear: both;
+	overflow: hidden;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #040000;
+	cursor: pointer;
+	font-weight: normal;
+	width: 100%;
+	}
+.address .left label{
+	padding: 0px 14px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #040000;
+	}
+.address .left .active{
+	cursor: pointer;
+	font-weight: normal;
+	padding: 16px 14px;
+	width: 100%;
+	margin-bottom: 24px;
+	}
+.address .left .word span{
+	padding: 0 16px;
+	}
+.address .left .word span:first-child{
+	padding-left: 10px;
+	}
+.address .right{
+	margin-right: 10px;
+	float: right;
+	}
+.address .right{
+	margin-left: 8.5%;
+	}
+.address .left .address_one,.right{
+	visibility: hidden;
+	}
+.left .first{
+	visibility: hidden;
+	}
+.address .active .address_one{
+	visibility: visible;
+	}
+.active .right{
+	visibility: visible;
+	}
+.active .first{
+	visibility: visible;
+	}
+.address .default{
+	padding-right: 40px;
+	visibility: visible;
+	}
+.address .left .set{
+	visibility: hidden;
+	}
+.address label:hover .set a{
+	visibility: visible;
+	color: #dc5b15;
+}
+.address .left input[type="radio"]{
+	margin: 0px;
+	background-color: #FC6E1C;
+	}
+.address .add{
+	margin: 20px 0px 18px;
+	}
+.address .add a{
+	border-radius: 5px;
+	padding: 4px 12px;
+	background: #fc6e1c;
+	color: #fff;
+	}
+.address .msg{
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 22px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	border: 2px solid #707070;
+	}
+.address .msg select{
+	border: 1px solid #7d7d7d;
+	appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url(../images/address_img/select_bg.jpg) no-repeat scroll right center transparent;
+	}
+.address .msg select{
+	padding-left: 6px;
+	padding-right: 30px;
+	cursor: pointer;
+	}
+.address .msg .trans label{
+	font-weight: normal;
+	padding-left: 40px;
+	}
+.address .trans{
+	padding: 20px 0px 20px 20px;
+	}
+.address .msg .total p{
+	margin-top: 20px;
+	margin-bottom: 0px;
+	}
+.address .msg .total span{
+	font-size: 24px;
+	color: #dc5b15;
+	}
+.address .msg .total p:last-child{
+	padding-left: 8.3%;
+	}
+.address .message{
+	padding: 20px;
+	}
+.address .message label{
+	font-weight: normal;
+	}
+.address .message p{
+	margin-top: 30px;
+	}
+.address .submit{
+	width: 222px;
+	float: right;
+	font-size: 24px;
+	font-family: "微软雅黑";
+	margin-right: 16px;
+	margin-bottom: 38px;
+	}
+.address .submit a{
+	display: block;
+	padding: 12px 60px;
+	background: #dc5b15;
+	color: #fff;
+	}

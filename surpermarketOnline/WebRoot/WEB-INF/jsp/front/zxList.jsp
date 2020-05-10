@@ -1,0 +1,4 @@
+<%@ page language="java" pageEncoding="UTF-8"%><!DOCTYPE html><html><%@include file="inc/inc_css.jsp" %><link rel="stylesheet" href="${ctx}/resource/front/css/news.css" />	<body>		<%@include file="inc/inc_head.jsp" %>
+		<div class="content">			<div class="container">				<div class="row">
+					<div class="col-lg-10 col-md-9 col-sm-9 news_list">
+						<h3>商品资讯</h3>						<ul>							<c:forEach items="${list }" var="listss">							<li>								<div class="col-md-3">									<a href="zxShow.html?id=${listss.id }"><img class="img-responsive hidden-sm hidden-xs" src="${ctx }/${listss.pic}" /></a>								</div>								<div class="list col-md-9 col-sm-12">									<p class="col-md-10 col-sm-9 col-xs-9">${listss.title }</p>									<a href="zxShow.html?id=${listss.id }" class="pull-right more">详情>></a>								</div>							</li>							</c:forEach>						</ul>					</div>				</div>			</div>		</div>		<%@include file="inc/inc_foot.jsp" %>	</body></html>
